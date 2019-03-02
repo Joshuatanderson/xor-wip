@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>XOR</title>
+        <meta http-equiv="Content-Type" content="text/html; charset = UTF-8" />
+        <style type="text/css">
+
+        </style>
+    </head>
+
+    <body>
+        <h1>XOR</h1>
+        <table border="1">
+            <tbody>
+                <tr valign="top">
+                    <th>Password</th>
+                    <td><input id="password" type="text" size="50" /></td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <strong>Original Text</strong>
+                        <p>
+                            <button onclick="toHex()">To Hex</button>
+                            <br />
+                            <input id="hexWithNoSpace" name="hexSpace" type="radio" checked> Hex with no space
+                            <br />
+                            <input id="hexWithSpace" name="hexSpace" type="radio"> Hex with space
+                        </p>
+                    </td>
+                    <td><textarea id="originalText" rows="5" cols="100"></textarea></td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <strong>Hex</strong>
+                        <p>
+                            <button onclick="toEncryptedHex()">To Encrypted Hex</button>
+                        </p>
+                        </th>
+                    <td><textarea id="originalHex" rows="5" cols="100"></textarea></td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <strong>Encrypted Hex</strong>
+                        <p>
+                            <button onclick="decryptToHex()">To Decrypted Hex</button>
+                        </p>
+                        </th>
+                    <td><textarea id="encryptedHex" rows="5" cols="100"></textarea></td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <strong>Decrypted Hex</strong>
+                        <p>
+                            <button onclick="toText()">To Text</button>
+                        </p>
+                        </th>
+                    <td><textarea id="decryptedHex" rows="5" cols="100"></textarea></td>
+                </tr>
+                <tr valign="top">
+                    <th>Decrypted Text</th>
+                    <td><textarea id="decryptedText" rows="5" cols="100"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script type="application/javascript" src="eric-index.js"></script>
+</html>
